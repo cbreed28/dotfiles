@@ -25,7 +25,7 @@ set hlsearch            " Highlight searches
 set nostartofline       " Don’t reset cursor to start of line when moving around.
 set scrolloff=3         " Start scrolling three lines before the horizontal window border
 set clipboard=unnamed   " Use the OS clipboard by default (on versions compiled with `+clipboard`)
-
+set wrap
 
 " Color Schemes
 set number
@@ -73,7 +73,7 @@ au BufNewFile,BufRead *.py set
     \ tabstop=4
     \ softtabstop=4
     \ shiftwidth=4
-    \ textwidth=79
+    \ textwidth=0
     \ expandtab
     \ autoindent
     \ fileformat=unix
@@ -83,7 +83,7 @@ au BufNewFile,BufRead *.json set
     \ tabstop=2
     \ softtabstop=2
     \ shiftwidth=2
-    \ textwidth=79
+    \ textwidth=0
     \ expandtab
     \ autoindent
     \ fileformat=unix
@@ -93,7 +93,7 @@ au BufNewFile,BufRead *.css, *.html, *.yml set
     \ tabstop=2
     \ softtabstop=2
     \ shiftwidth=2
-    \ textwidth=79
+    \ textwidth=0
     \ expandtab
     \ autoindent      
 

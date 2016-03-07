@@ -148,8 +148,8 @@ tput rc                     # Reset the cursor
 PROMPT_COMMAND=prompt_command
 
 # The actual prompt export is "[Documents]$"
-PS1="\[\033]0;\W\007\]";                    # Placeholder
-PS1+="\[${bold}\]\n";                       # Don't overlap floating title bar from above
+# PS1="\[\033]0;\W\007\]";                    # Placeholder
+PS1="\[${bold}\]\n";                       # Don't overlap floating title bar from above
 PS1+="\[${yellow}\][\W]\\$\[${reset}\] ";   # i.e. [Documents]$
 export PS1
 
