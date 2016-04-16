@@ -88,8 +88,26 @@ au BufNewFile,BufRead *.json set
     \ autoindent
     \ fileformat=unix
 
-" Other file types
-au BufNewFile,BufRead *.css, *.html, *.yml set
+" CSS File Settings ( Override General Settings )
+au BufNewFile,BufRead *.css set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=4
+    \ textwidth=0
+    \ expandtab
+    \ autoindent
+
+" HTML File Settings ( Override General Settings )
+au BufNewFile,BufRead *.html set
+    \ tabstop=2
+    \ softtabstop=2
+    \ shiftwidth=2
+    \ textwidth=0
+    \ expandtab
+    \ autoindent
+
+" YML File Settings ( Override General Settings )
+au BufNewFile,BufRead *.yml set
     \ tabstop=2
     \ softtabstop=2
     \ shiftwidth=2
