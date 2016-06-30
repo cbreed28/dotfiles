@@ -1,0 +1,9 @@
+#
+#   Author  ::  Cory Breed
+#   Created :: 6/29/16
+#   
+#   Creates aliases for the bash shell
+#
+
+alias dev-tmux="source ~/.tmux/dev.tmux"
+
