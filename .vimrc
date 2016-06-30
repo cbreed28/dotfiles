@@ -45,7 +45,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-commentary'
 
 " An intelli-sense engine for Vim
-Plug 'Shougo/neocomplete.vim'
+" Plug 'Shougo/neocomplete.vim'
 
 " Support for Apple's Swift language
 Plug 'kballard/vim-swift'
@@ -67,16 +67,12 @@ set scrolloff=3                 " Start scrolling three lines before the horizon
 set backspace=indent,eol,start  " Fore the backspace key to behave like a normal text editor
 set nostartofline               " Don't reset the cursor to teh start of the line when moving around
 set wrap                        " Force lines to wrap visually, don't change the buffer
-set ttyfast                     " Improves redrawing for newer computers
 set laststatus=2                " Always show the status bar
 
 " Mouse Settings
 set mouse=a     " Allow scrolling in the editor
-if has("mouse_sgr")
-    set ttymouse=sgr
-else
-    set ttymouse=xterm2
-end
+set ttymouse=xterm2
+"set ttyfast
 
 " Copy Paste Settings
 set clipboard=unnamed           " Use the OS clipboard by default (on vim versions compiled with +clipboard)
@@ -124,6 +120,7 @@ let NerdTreeIgnore=['.DS_Store[[file]]']        " Ignore .DS_STORE files
 
 " GitGuter Plugin Settings
 let g:gitgutter_realtime=1
+let g:gitgutter_sign_column_always = 1
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -135,27 +132,29 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_enable_json_checker = 1
+
 "  NeoComplete
-let g:neocomplete#enable_at_startup = 1                     " Start at vim startup
-let g:neocomplete#enable_smart_case = 1                     " use smart case
-let g:neocomplete#sources#syntax#min_keyword_length = 3     " Set minimum syntax keyword length
+"let g:neocomplete#enable_at_startup = 1                     " Start at vim startup
+"let g:neocomplete#enable_smart_case = 1                     " use smart case
+"let g:neocomplete#sources#syntax#min_keyword_length = 3     " Set minimum syntax keyword length
 
 " NeoComplete key-mappings
 " ------------------------
-inoremap <expr><C-l> neocomplete#complete_common_string()
+"inoremap <expr><C-l> neocomplete#complete_common_string()
 " Recommended key-mappings.
 " <CR>: close popup and save indent.
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+"inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+"function! s:my_cr_function()
+"    return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
     " For no inserting <CR> key.
         "return pumvisible() ? "\<C-y>" : "\<CR>"
-endfunction
+"endfunction
 " <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+"inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+"inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+"inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
 " ------------------------------------------------------------------------
 " file specific formatting settings
