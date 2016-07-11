@@ -38,6 +38,11 @@ cp .iterm2_profile_space_gray ~/Library/Application\ Support/iTerm2/DynamicProfi
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew install tmux
 brew install vim --with-openssl --with-lua --override-system-vim
+brew install node
+
+# configure git
+git config --global credential.helper osxkeychain
+git config --global user.name "Cory Breed"
 
 # Source the new bash profile
 source ~/.bash_profile
