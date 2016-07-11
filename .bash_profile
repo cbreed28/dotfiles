@@ -18,3 +18,7 @@ source ~/.bash_prompt
 
 # Setup the aliases for the shell
 source ~/.bash_alias
+
+# Source the macOS Settings
+source ~/.macos
+
