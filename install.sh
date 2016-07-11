@@ -32,6 +32,9 @@ cp .vimrc ~/.vimrc
 cp .vim/colors/Kafka.vim ~/.vim/colors/Kafka.vim
 cp -r .tmux/ ~/.tmux/
 
+# Copy wallpaper
+cp .wallpapers/WWDC\ Wallpaper.png ~/Pictures/WWDC\ Wallpaper.png
+
 # Install Dev Software
 echo "Installing Dev env software"
 cp .iterm2_profile_space_gray ~/Library/Application\ Support/iTerm2/DynamicProfiles/space_gray
