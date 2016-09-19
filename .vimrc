@@ -116,7 +116,8 @@ let g:airline#extensions#tabline#enabled = 1
 map <C-f> :NERDTreeTabsToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:nerdtree_tabs_open_on_console_startup=1
-let NerdTreeIgnore=['.DS_Store[[file]]']        " Ignore .DS_STORE files
+let NerdTreeIgnore=['.DS_Store[[file]]', '\.pyc$']  " Ignore useless files
+
 
 " GitGuter Plugin Settings
 let g:gitgutter_realtime=1

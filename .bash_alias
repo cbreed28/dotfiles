@@ -71,4 +71,7 @@ alias gitaa="git add --all"
 # git add
 alias gita="git add"
 
+# Docker
+alias dc="docker-compose"
+
 
