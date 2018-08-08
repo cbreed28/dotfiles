@@ -50,6 +50,10 @@ Plug 'tpope/vim-commentary'
 " Support for Apple's Swift language
 Plug 'kballard/vim-swift'
 
+" Support for React and JSX
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
 
 call plug#end()
 
