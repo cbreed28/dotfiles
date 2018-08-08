@@ -20,7 +20,7 @@ mkdir -p $WORKON_HOME
 # source /usr/local/bin/virtualenvwrapper.sh
 
 # Setup VK NPM 
-export NPM_TOKEN=LVQ4AcaUHrwwRlFVUQew83VK7UBrYsf1Uwj1JcOuC+u5i4nMzLLAgEWtq4dkOG/q
+export NPM_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Source the bash prompt style
 source ~/.bash_prompt
