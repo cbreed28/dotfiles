@@ -73,10 +73,3 @@ alias gita="git add"
 
 # Docker
 alias dc="docker-compose"
-
-## SSH Connections
-alias staging-salt-master="ssh cbreed@salt-master.internal.stage.vkdata.io"
-alias dev-salt-master="ssh cbreed@salt-master.internal.dev.vkdata.io"
-
-alias prod-salt-master="ssh cbreed@salt-master.internal.ignitionpai.com"
-
